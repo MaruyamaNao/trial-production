@@ -1,0 +1,17 @@
+.index{
+  height: 100%;
+  width: 100vw;
+  background-color: $mainback;
+
+  &__page{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+
+    &__tweet{
+      border: 1px solid $mainblack;
+      padding: 15px 10px;
+      margin: 10px;
+    }
+  }
+}
