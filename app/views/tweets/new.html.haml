@@ -1,0 +1,6 @@
+.new
+  = form_with(model: @tweet, local: true) do |f|
+    .new__text
+      = f.text_area :text, placeholder: "ツイートしてみよう" , rows: "10"
+    .new__submit
+      = f.submit "投稿"
