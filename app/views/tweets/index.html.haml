@@ -1,0 +1,5 @@
+.index
+  .index__page
+    - @tweets.each do |tweet|
+      .index__page__tweet
+        = tweet.text
