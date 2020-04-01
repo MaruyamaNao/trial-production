@@ -1,12 +1,13 @@
 .index{
-  height: 1200px;
-  width: 100vw;
-  background-color: $mainback;
+  height: 100%;
+  width: 100%;
 
   &__page{
     width: 70%;
     margin: auto;
-    padding: 20px;
+    padding: 20px 40px;
+    background-color: $mainback;
+
 
     &__tweet{
       border: 1px solid $mainblack;
