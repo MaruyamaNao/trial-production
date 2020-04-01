@@ -1,13 +1,11 @@
 .show
   .show__page
     = @tweet.text
-
     .show__page__method
-
-      = link_to edit_tweet_path(@tweet.id) do
-        .show__page__method--edit
-          編集
-
-      = link_to tweet_path(@tweet.id) ,method: :delete do
-        .show__page__method--delete
-          削除
+      - if user_signed_in? && current_user.id == @tweet.user_id
+        = link_to edit_tweet_path(@tweet.id) do
+          .show__page__method--edit
+            編集
+        = link_to tweet_path(@tweet.id) ,method: :delete do
+          .show__page__method--delete
+            削除
