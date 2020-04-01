@@ -1,8 +1,9 @@
 .index
   .index__page
     - @tweets.each do |tweet|
-      .index__page__tweet
-        = tweet.text
+      = link_to "/tweets/#{tweet.id}" do
+        .index__page__tweet
+          = tweet.text
 = link_to new_tweet_path do
   .tweetbtn
     ツイートする
