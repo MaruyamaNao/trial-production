@@ -4,7 +4,10 @@
     - @tweets.each do |tweet|
       = link_to "/tweets/#{tweet.id}" do
         .index__page__tweet
-          = tweet.text
+          .index__page__tweet--name
+            = tweet.user.nickname
+          .index__page__tweet--text
+            = tweet.text
 = link_to new_tweet_path do
   .tweetbtn
     ツイートする
