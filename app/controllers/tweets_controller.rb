@@ -2,6 +2,7 @@ class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
   before_action :move_to_index, except: [:index, :show]
 
+
   
   def index
     @tweets = Tweet.order("created_at DESC").limit(8)
@@ -46,5 +47,6 @@ class TweetsController < ApplicationController
   def move_to_index
     redirect_to action: :index unless user_signed_in?
   end
+
 
 end
