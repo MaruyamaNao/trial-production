@@ -7,8 +7,7 @@
         = link_to "/tweets/#{tweet.id}" do
           .index__page__box--tweet
             = tweet.text
-  .index__turn
-  = paginate(@tweets)
+    = paginate(@tweets)
 = link_to new_tweet_path do
   .tweetbtn
     ツイートする

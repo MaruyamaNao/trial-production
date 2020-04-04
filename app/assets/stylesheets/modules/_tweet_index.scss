@@ -25,6 +25,20 @@
       }
     }
   }
+
+  & .pagination{
+
+    & li>a {    
+      border: none;
+      color: $mainblack; 
+      background: $mainback;
+    }
+
+    & .active>a { 
+      background: $maincolor;
+      border-radius: 15px;  
+    }
+  }
 }
 
 .tweetbtn {
@@ -35,8 +49,8 @@
   background: $maincolor;
   text-align: center;
   border-radius: 100px;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 40px;
   position: fixed;
   padding: 15px
 }
