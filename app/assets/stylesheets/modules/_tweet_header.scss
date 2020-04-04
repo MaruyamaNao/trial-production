@@ -3,25 +3,24 @@
   background-color: $maincolor;
   width: 100vw;
   line-height: 60px;
-  top: 0px;
-  margin: 0px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px;
 
   &__box{
-    width: 260px;
     display: flex;
-    justify-content: space-between;
-  }
-  
-  & h1{
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 35px;
+    font-size: 22px;
+
+
+    &--right{
+      padding-left: 50px;
+
+    }
   }
 
   & a{
     color: $mainwhite;
-    font-size: 22px;
     text-decoration: none;
   }
 }
