@@ -1,8 +1,8 @@
 .index{
+  min-height: 100vh;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: $mainback;
-
 
   &__page{
     width: 64%;
@@ -26,8 +26,6 @@
     }
   }
 }
-
-
 
 .tweetbtn {
   line-height: 32px;
