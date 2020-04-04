@@ -2,12 +2,12 @@
 .index
   .index__page
     - @tweets.each do |tweet|
-      .index__page__name
+      .index__page__box
         = link_to tweet.user.nickname, user_path(tweet.user)
-      = link_to "/tweets/#{tweet.id}" do
-        .index__page__tweet
-          = tweet.text
-  = paginate(@tweets)
+        = link_to "/tweets/#{tweet.id}" do
+          .index__page__box--tweet
+            = tweet.text
+    = paginate(@tweets)
 = link_to new_tweet_path do
   .tweetbtn
     ツイートする

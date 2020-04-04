@@ -1,26 +1,44 @@
 .index{
+  min-height: 100vh;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  background-color: $mainback;
 
   &__page{
-    width: 70%;
+    width: 64%;
     margin: auto;
-    padding: 20px 40px;
-    background-color: $mainback;
+    padding: 20px;
 
-
-    &__tweet{
+    &__box{
       border: 1px solid $mainblack;
-      padding: 15px 10px;
-      margin: 10px;
+      margin-bottom: 30px;
+      padding: 12px 30px;
+
+
+      &--tweet{
+        padding-top: 2px;
+      }
+
+      & a{
+        color: $mainblack;
+        text-decoration: none;
+      }
     }
   }
-}
 
+  & .pagination{
 
-a{
-  color: $mainblack;
-  text-decoration: none;
+    & li>a {    
+      border: none;
+      color: $mainblack; 
+      background: $mainback;
+    }
+
+    & .active>a { 
+      background: $maincolor;
+      border-radius: 15px;  
+    }
+  }
 }
 
 .tweetbtn {
@@ -31,8 +49,8 @@ a{
   background: $maincolor;
   text-align: center;
   border-radius: 100px;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 40px;
   position: fixed;
   padding: 15px
 }
