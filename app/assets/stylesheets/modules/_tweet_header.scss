@@ -1,0 +1,25 @@
+.header{
+  color: $mainwhite;
+  background-color: $maincolor;
+  width: 100vw;
+  line-height: 60px;
+
+  &__box{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  & h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 35px;
+  }
+
+  & a{
+    color: $mainwhite;
+    font-size: 22px;
+  }
+}
+
