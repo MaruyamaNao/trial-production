@@ -1,27 +1,33 @@
 .index{
   height: 100%;
   width: 100%;
+  background-color: $mainback;
+
 
   &__page{
-    width: 70%;
+    width: 64%;
     margin: auto;
-    padding: 20px 40px;
-    background-color: $mainback;
+    padding: 20px;
 
-
-    &__tweet{
+    &__box{
       border: 1px solid $mainblack;
-      padding: 15px 10px;
-      margin: 10px;
+      margin-bottom: 30px;
+      padding: 12px 30px;
+
+
+      &--tweet{
+        padding-top: 2px;
+      }
+
+      & a{
+        color: $mainblack;
+        text-decoration: none;
+      }
     }
   }
 }
 
 
-a{
-  color: $mainblack;
-  text-decoration: none;
-}
 
 .tweetbtn {
   line-height: 32px;
