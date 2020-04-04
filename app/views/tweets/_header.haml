@@ -1,7 +1,15 @@
-
-- if user_signed_in?
-  = link_to "マイページ", user_path(current_user)
-  = link_to "ログアウト", destroy_user_session_path, method: :delete
-- else
-  = link_to "ログイン", new_user_session_path
-  = link_to "新規登録", new_user_registration_path
+.header
+  %h1
+    Trial-Production
+    - if user_signed_in?
+      .header__box
+        .header--left
+          = link_to "マイページ", user_path(current_user)
+        .header--right
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
+    - else
+      .header__box
+        .header--left
+          = link_to "ログイン", new_user_session_path
+        .header--right
+          = link_to "新規登録", new_user_registration_path
