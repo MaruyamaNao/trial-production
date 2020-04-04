@@ -29,14 +29,14 @@
   & .pagination{
 
     & li>a {    
-      border: none;
+      border:  1px $maincolor solid;
       color: $mainblack; 
       background: $mainback;
     }
 
     & .active>a { 
       background: $maincolor;
-      border-radius: 15px;  
+      color: $mainwhite;
     }
   }
 }
