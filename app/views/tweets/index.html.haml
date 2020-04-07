@@ -8,6 +8,7 @@
           .index__page__box--tweet
             = tweet.text
     = paginate(@tweets)
-= link_to new_tweet_path do
-  .tweetbtn
-    ツイートする
+- if user_signed_in?
+  = link_to new_tweet_path do
+    .tweetbtn
+      ツイートする
