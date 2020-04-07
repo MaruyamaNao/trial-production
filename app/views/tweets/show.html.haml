@@ -1,9 +1,14 @@
 .show
   .show__page
-    = link_to user_path(@tweet.user) do
-      = @tweet.user.nickname
+    .show__page__top
+      .show__page__top--content
+        ←
+      = link_to user_path(@tweet.user) do
+        .show__page__top--content
+          = @tweet.user.nickname
+    .show__page__tweet
       = @tweet.text
-      .show__page__method
+      .show__page__tweet--method
         - if user_signed_in? && current_user.id == @tweet.user_id
           = link_to edit_tweet_path(@tweet.id) do
             .show__page__method--edit
