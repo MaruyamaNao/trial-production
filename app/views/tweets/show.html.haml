@@ -2,7 +2,8 @@
   .show__page
     .show__page__top
       .show__page__top--content
-        ←
+        = link_to tweets_path do
+          ←
       = link_to user_path(@tweet.user) do
         .show__page__top--content
           = @tweet.user.nickname
