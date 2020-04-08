@@ -1,12 +1,36 @@
 .show{
-  height: 100vh;
-  width: 100%;
+  padding-top: 20px;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: $mainback;
 
   &__page{
-    width: 70%;
+    height: 100%;
+    width: 64%;
     margin: auto;
-    padding: 20px;
-    font-size: 23px;
-    background-color: $mainback;
+    border-top: 1px solid $mainblack; 
+    border-left: 1px solid $mainblack;
+    border-right: 1px solid $mainblack;
+
+    &__top{
+      display: flex;
+      border-bottom: 1px solid $mainblack;
+      padding: 0px 9px;
+
+      &--content{
+        font-size: 28px;
+        padding: 12px 15px;
+      }
+    }
+
+    &__date{
+      padding: 10px 10px;
+    }
+    &__content{
+        text-align: center;
+        font-size: 22px;
+        border-bottom: 1px solid $mainblack;
+        padding-bottom: 10px;
+    }
   }
 }
