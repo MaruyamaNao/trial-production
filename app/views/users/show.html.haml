@@ -1,7 +1,7 @@
 = render "tweets/header"
 .show-user
   .show-user__page
-    .show-user__page--box
-      = @nickname
-      - @tweets.each do |tweets|
+    = @nickname
+    - @tweets.each do |tweets|
+      .show-user__page--box
         = tweets.text
