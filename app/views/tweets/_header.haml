@@ -1,6 +1,7 @@
 .header
   .header--left
-    Trial-Production
+    = link_to tweets_path do
+      Trial-Production
   .header__box
     - if user_signed_in?
       = link_to "マイページ", user_path(current_user)
