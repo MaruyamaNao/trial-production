@@ -1,1 +1,7 @@
-= paginate(@tweets)
+= render "tweets/header"
+.show-user
+  .show-user__page
+    .show-user__page--box
+      = @nickname
+      - @tweets.each do |tweets|
+        = tweets.text

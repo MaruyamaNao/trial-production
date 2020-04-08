@@ -1,0 +1,28 @@
+.show-user{
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  background-color: $mainback;
+
+  &__page{
+    width: 64%;
+    margin: auto;
+    padding: 20px;
+
+    &--box{
+      border: 1px solid $mainblack;
+      margin-bottom: 30px;
+      padding: 12px 30px;
+
+
+      &--tweet{
+        padding-top: 2px;
+      }
+
+      & a{
+        color: $mainblack;
+        text-decoration: none;
+      }
+    }
+  }
+}
