@@ -1,27 +1,28 @@
-.contents.row
-  .container
-    %h2 Sign up
-    = form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f|
+.login
+  .login__page
+    = form_with model: @user, url: user_registration_path, local: true do |f|
       = devise_error_messages!
-      .field
-        = f.label :nickname
-        %em (6 characters maximum)
+
+      .login__page--box
+        = f.label :ニックネーム
+        %em (８文字まで)
         %br/
-        = f.text_field :nickname, autofocus: true, maxlength: "6"
-      .field
-        = f.label :email
+        = f.text_field :nickname, autofocus: true, maxlength: "8"
+
+      .login__page--box
+        = f.label :メールアドレス
         %br/
         = f.email_field :email
-      .field
-        = f.label :password
-        - if @validatable
-          %em
-            (#{@minimum_password_length} characters minimum)
+
+      .login__page--box
+        = f.label :パスワード
         %br/
         = f.password_field :password, autocomplete: "off"
-      .field
-        = f.label :password_confirmation
+
+      .login__page--box
+        = f.label :パスワード確認用
         %br/
         = f.password_field :password_confirmation, autocomplete: "off"
-      .actions
+
+      .login__page--box
         = f.submit "サインイン"
