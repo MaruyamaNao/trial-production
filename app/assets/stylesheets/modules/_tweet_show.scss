@@ -4,10 +4,12 @@
   background-color: $mainback;
 
   &__page{
-    height: 90vh;
+    height: 100%;
     width: 64%;
     margin: auto;
-    border: 1px solid $mainblack;  
+    border-top: 1px solid $mainblack; 
+    border-left: 1px solid $mainblack;
+    border-right: 1px solid $mainblack;
 
     &__top{
       display: flex;
@@ -18,6 +20,16 @@
         font-size: 28px;
         padding: 12px 15px;
       }
+    }
+
+    &__date{
+      padding: 10px 10px;
+    }
+    &__content{
+        text-align: center;
+        font-size: 22px;
+        border-bottom: 1px solid $mainblack;
+        padding-bottom: 10px;
     }
   }
 }

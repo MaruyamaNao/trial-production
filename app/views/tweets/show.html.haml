@@ -7,7 +7,9 @@
       = link_to user_path(@tweet.user) do
         .show__page__top--content
           = @tweet.user.nickname
-    .show__page__tweet
+    .show__page__date
+      = @tweet.created_at
+    .show__page__content
       = @tweet.text
       .show__page__tweet--method
         - if user_signed_in? && current_user.id == @tweet.user_id
