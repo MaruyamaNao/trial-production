@@ -1,0 +1,23 @@
+.login{
+  width: 100vw;
+  height: 100vh;
+  background-color: $mainback;
+
+  &__page{
+    font-size: 30px;
+    padding-top: 100px;
+    width: 64%;
+    margin: auto;
+    text-align: center;
+
+    &--box{
+      font-size: 15px;
+      padding: 20px 0px;
+      
+
+      & .submit{
+        font-size: 30px;
+      }
+    }
+  }
+}
