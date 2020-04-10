@@ -1,1 +1,23 @@
-= paginate(@tweets)
+= render "tweets/header"
+.user-show
+  .user-show__page
+    .user-show__page__top
+      .user-show__page__top--content
+        = link_to tweets_path do
+          ←
+      .user-show__page__top--content
+        = @nickname
+        さんのマイページ
+    - @tweets.each do |tweet|
+      .user-show__page__content
+        = tweet.text
+        .user-show__page__content--date
+          = tweet.created_at
+      .user-show__page__tweet--method
+        - if user_signed_in? && current_user.id == @tweet.user_id
+          = link_to edit_tweet_path(@tweet.id) do
+            .user-show__page__method--edit
+              編集
+          = link_to tweet_path(@tweet.id) ,method: :delete do
+            .user-show__page__method--delete
+              削除
