@@ -1,28 +1,35 @@
-.show-user{
+.user-show{
+  padding-top: 20px;
   min-height: 100vh;
-  height: 100%;
   width: 100vw;
   background-color: $mainback;
 
   &__page{
+    height: 100%;
     width: 64%;
     margin: auto;
-    padding: 20px;
 
-    &--box{
+    &__top{
+      display: flex;
       border: 1px solid $mainblack;
-      margin-bottom: 30px;
-      padding: 12px 30px;
+      padding: 0px 9px;
+      margin-bottom: 24px;
 
 
-      &--tweet{
-        padding-top: 2px;
+      &--content{
+        font-size: 28px;
+        padding: 12px 15px;
       }
+    }
 
-      & a{
-        color: $mainblack;
-        text-decoration: none;
-      }
+    &__content{
+        font-size: 22px;
+        border: 1px solid $mainblack;
+        margin-bottom: 24px;
+        padding: 10px;
+
+        &--date{
+        }    
     }
   }
 }
